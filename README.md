@@ -1,6 +1,6 @@
 # Medusa Integration With Matomo Analytics
 
-![Medusa Hackathon 2022](https://raw.githubusercontent.com/medusajs/hackathon-oct2022-guidelines/main/hackathon-banner.jpeg)
+![Medusa Hackathon 2022](/cover.jpg)
 
 ## About
 
@@ -19,6 +19,7 @@ Storefront based on [Medusa NextJS storefront](https://github.com/medusajs/nextj
 Before you start with the tutorial make sure you have
 
 - [Node.js](https://nodejs.org/en/) installed on your machine
+- [Medusa Server](https://docs.medusajs.com/quickstart/quick-start/) installed on your machine
 - [Matomo account](https://matomo.org/) or Matomo self-hosted instance
 
 ### Install Project
@@ -36,17 +37,11 @@ cd medusa-matomo-storefront
 npm install
 ```
 
-3. go back to the root folder and configure Medusa server
+3.  Start the storefront, move to the directory with the Medusa server and start that as well:
 
 ```bash
-cd ..
-npm install -g @medusajs/medusa-cli
-medusa new my-medusa-store --seed
-```
+npm run dev
 
-4.  Change directory and start Medusa server
-
-```
 cd my-medusa-store
 npm start
 ```
@@ -54,5 +49,5 @@ npm start
 ## Resources
 
 - [Medusa’s GitHub repository](https://github.com/medusajs/medusa)
-- [Medusa Admin Panel](https://github.com/medusajs/admin)
 - [Medusa Documentation](https://docs.medusajs.com/)
+- [Matomo Documentation](https://developer.matomo.org/)
